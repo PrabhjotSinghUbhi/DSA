@@ -12,7 +12,7 @@ int main()
         }
         for (int j = 0; j < count - i; j++) // for numbers
         {
-            cout << (i + 1);   
+            cout << "*";   
         }
         cout << endl;
     }

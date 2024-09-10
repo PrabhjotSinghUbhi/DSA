@@ -6,9 +6,9 @@ int main()
     // int m = 50;
     // int n = 50;
     int i;
-    for (i = 1 ; i <= 5; i++)//one line for one iteration 
+    for (i = 0 ; i < 5; i++)//one line for one iteration 
     {
-        for(int j = 1;j<=6;j++ ){
+        for(int j = 0;j<5;j++ ){
         cout << "*" ;
     }
     cout << endl;
