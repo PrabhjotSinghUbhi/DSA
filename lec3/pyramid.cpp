@@ -2,7 +2,7 @@
 using namespace std;
 
 int main() {
-    int count = ;
+    int count = 4;
     for (int i = 0; i < count; i++)  
     {
         for (int j = 0; j < count - (i + 1); j++)//printing spaces 
