@@ -7,7 +7,7 @@ void printhello(){
 }
 
 int main() {
-    //function cll pr invoke a funtion
+    //function cll pr invoke a function
     printhello();
     return 0;
 }
