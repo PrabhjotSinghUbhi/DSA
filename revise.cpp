@@ -1,21 +1,28 @@
-//swap largest and smallest in an arr;
 #include <iostream>
-#include <algorithm>
+#include <vector>
+#include<climits>
 using namespace std;
 
-int main() {
-
-    int arr[] = {1,2,3,4,5,6,7,8,9,8};
-    int sz = 9;
-    int large = INT16_MIN;
-    int small = INT16_MAX;
-    for (int i = 0; i < sz; i++)
-    {
-        large = max(arr[i],large);
-        small = min(arr[i],small);
+int maxSubArraySum(vector<int>& vec) {
+    int maxSum = INT_MIN;
+    int n = vec.size();
+    
+    for (int i = 0; i < n; i++) {
+        int currentSum = 0;
+        for (int j = i; j < n; j++) {
+            currentSum += vec[j];
+            if (currentSum > maxSum) {
+                maxSum = currentSum;
+            }
+        }
     }
-    swap(large , small);
-    cout << "smallest: "<<small<< endl;
-    cout << "largest: " << large<< endl;
+    
+    return maxSum;
+}
+
+int main() {
+    vector<int> vec = {-2, 1, -3, 4, -1, 2, 1, -5, 4};
+    int result = maxSubArraySum(vec);
+    cout << "Maximum subarray sum is: " << result << endl;
     return 0;
 }
