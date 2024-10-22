@@ -4,7 +4,7 @@ using namespace std;
 int main()
 {
     int count = 4;
-    int num = 1;
+    int num = 0;
     for (int i = 0; i < count; i++)
     {
         for (int j = 0; j <= i; j++)
