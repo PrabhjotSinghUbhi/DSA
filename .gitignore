@@ -4,4 +4,5 @@
 # Ignore the .vscode folder
 .vscode/
 
+#ignore specific file
 revise.cpp
